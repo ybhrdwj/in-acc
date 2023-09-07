@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>in/Acc</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon-85cb4291.ico" sizes="any">
+<link rel="icon" href="/assets/favicon-68453168.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<meta property="og:image" content="/assets/og-image.png">
+  <link rel="stylesheet" href="/assets/index-cc74ada6.css">
+</head>
+<body>
+    <!--Hero Section-->
+    <div class=" bg-fixed bg-cover bg-center bg-[url('/image.png')] h-screen flex-col flex items-center justify-center">
+    <h1 class="font-bold text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center">Indian Techno<br>Accelerationism</h1>
+    <p class="font-normal text-white text-opacity-75 text-lg sm:text-lg md:text-xl lg:text-2xl mt-1 text-center">A Vision for Technological Advancement in India</p>
+    <a href="#manifesto">
+    <button class=" flex border border-white text-white rounded-md px-4 py-1 mt-6 backdrop-blur-md"> 
+        <svg  class="pr-2" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 10C17 6.0525 20.7769 4.03687 29 4C29.1315 3.9995 29.2617 4.02503 29.3833 4.07511C29.5048 4.12519 29.6153 4.19883 29.7082 4.29179C29.8012 4.38474 29.8748 4.49518 29.9249 4.61673C29.975 4.73828 30.0005 4.86854 30 5V23C30 23.2652 29.8947 23.5196 29.7071 23.7071C29.5196 23.8946 29.2652 24 29 24C21 24 17.9094 25.6131 16 28M16 10C15 6.0525 11.2231 4.03687 3.00001 4C2.86855 3.9995 2.73829 4.02503 2.61674 4.07511C2.49519 4.12519 2.38475 4.19883 2.29179 4.29179C2.19884 4.38474 2.1252 4.49518 2.07512 4.61673C2.02504 4.73828 1.99951 4.86854 2.00001 5V22.8794C2.00001 23.4969 2.38251 24 3.00001 24C11 24 14.1019 25.625 16 28M16 10V28" stroke="white" style="stroke:white;stroke:white;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Read Manifesto</button></a>
+        <div class="flex p-1 m-1 items-center space-x-2">
+            <a href="https://discord.gg/indiatech" target="_blank">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.2701 5.33C17.9401 4.71 16.5001 4.26 15.0001 4C14.987 3.99958 14.9739 4.00205 14.9618 4.00723C14.9497 4.01241 14.9389 4.02019 14.9301 4.03C14.7501 4.36 14.5401 4.79 14.4001 5.12C12.8091 4.88 11.1911 4.88 9.60012 5.12C9.46012 4.78 9.25012 4.36 9.06012 4.03C9.05012 4.01 9.02012 4 8.99012 4C7.49012 4.26 6.06012 4.71 4.72012 5.33C4.71012 5.33 4.70012 5.34 4.69012 5.35C1.97012 9.42 1.22012 13.38 1.59012 17.3C1.59012 17.32 1.60012 17.34 1.62012 17.35C3.42012 18.67 5.15012 19.47 6.86012 20C6.89012 20.01 6.92012 20 6.93012 19.98C7.33012 19.43 7.69012 18.85 8.00012 18.24C8.02012 18.2 8.00012 18.16 7.96012 18.15C7.39012 17.93 6.85012 17.67 6.32012 17.37C6.28012 17.35 6.28012 17.29 6.31012 17.26C6.42012 17.18 6.53012 17.09 6.64012 17.01C6.66012 16.99 6.69012 16.99 6.71012 17C10.1501 18.57 13.8601 18.57 17.2601 17C17.2801 16.99 17.3101 16.99 17.3301 17.01C17.4401 17.1 17.5501 17.18 17.6601 17.27C17.7001 17.3 17.7001 17.36 17.6501 17.38C17.1301 17.69 16.5801 17.94 16.0101 18.16C15.9701 18.17 15.9601 18.22 15.9701 18.25C16.2901 18.86 16.6501 19.44 17.0401 19.99C17.0701 20 17.1001 20.01 17.1301 20C18.8501 19.47 20.5801 18.67 22.3801 17.35C22.4001 17.34 22.4101 17.32 22.4101 17.3C22.8501 12.77 21.6801 8.84 19.3101 5.35C19.3001 5.34 19.2901 5.33 19.2701 5.33ZM8.52012 14.91C7.49012 14.91 6.63012 13.96 6.63012 12.79C6.63012 11.62 7.47012 10.67 8.52012 10.67C9.58012 10.67 10.4201 11.63 10.4101 12.79C10.4101 13.96 9.57012 14.91 8.52012 14.91ZM15.4901 14.91C14.4601 14.91 13.6001 13.96 13.6001 12.79C13.6001 11.62 14.4401 10.67 15.4901 10.67C16.5501 10.67 17.3901 11.63 17.3801 12.79C17.3801 13.96 16.5501 14.91 15.4901 14.91Z" fill="white" style="fill:white;fill:white;fill-opacity:1;"/>
+                    </svg>
+                    
+            </a>
+            <a href="#" target="_blank">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21V19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26V21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2Z" fill="white" style="fill:white;fill:white;fill-opacity:1;"/>
+                    </svg>
+                    
+            </a>
+        </div>
+    </div>
+    <!--Manifesto-->
+
+    <div id="manifesto" class="bg-gray-950 h-auto -m-1 text-white py-16 px-4 sm:px-[460px] text-base leading-7">
+        
+        <h2 class="font-semibold text-xl">Preamble</h2>
+        
+        <p class="text-gray-400 font-libre-serif my-2">We live in a time of extraordinary potential. Technology, when harnessed effectively, can radically transform societies and uplift the quality of life for billions. For India, with its unique blend of cultural diversity, rich heritage, and untapped human potential, the advent of digital transformation holds remarkable promise.</p>
+
+        
+        <p class="my-2 text-gray-400 font-libre-serif">"Indic Acceleration" represents our commitment to employ the profound power of technology for accelerating India's progress, thereby elevating our society to new heights. Our aim is to utilize advancements in artificial intelligence, machine learning, blockchain, big data, and other tech innovations to speed up India's socio-economic growth, reduce corruption, streamline the judicial system, and encourage overall development.</p>
+        
+        <h2 class="my-3 font-semibold text-xl">I. Reducing Corruption</h2>
+        
+        <p class="text-gray-400 font-libre-serif">Corruption is a social disease that hinders the healthy growth of any nation. We believe that by harnessing the power of blockchain and AI, we can inject more transparency and accountability into systems. A decentralized, transparent digital ledger can help track and validate transactions, making bribery and fraud significantly more difficult. AI can be used to analyze patterns and predict potential fraud before it occurs.</p>
+        
+        <h2 class="font-semibold my-3 text-xl">II. Accelerating Civilization</h2>
+        
+        <p class="text-slate-400 font-libre-serif">To harness the potential of our civilization, we will integrate digital technology into every aspect of life. This will include education, healthcare, agriculture, infrastructure, and energy. We aim to create a digital-first society where access to information and services is democratized, enhancing overall productivity and facilitating India's leap into a digitally empowered future.</p>
+        
+        <h2 class="font-semibold my-3 text-xl">III. AI in Judiciary</h2>
+        
+        <p class="text-gray-400 font-libre-serif">The Indian judicial system, burdened by a vast backlog of cases, is in desperate need of a revamp. Leveraging AI in judiciary can help expedite legal proceedings, reduce manual workload, and offer a more efficient system. An AI-driven system can sort and prioritize cases, analyze legal documents swiftly, and offer support in decision-making.</p>
+        
+        <h2 class="font-semibold my-3 text-xl">IV. Education and Skill Development</h2>
+        
+        <p class="text-gray-400 font-libre-serif">We envisage a future where every Indian, regardless of their socio-economic status, has access to quality education. Through digital platforms, we can democratize learning and provide equal opportunities for everyone. AI-driven personalized learning can help cater to individual learning styles, offering a more effective education.</p>
+        
+        <h2 class="font-semibold my-3 text-xl" >V. Smart Infrastructure</h2>
+        
+        <p class="text-slate-400 font-libre-serif my-3">Reducing Infrastructure Corruption: Infrastructure projects often become breeding grounds for corruption due to their complex, multifaceted nature and lack of transparency. AI-driven monitoring and blockchain technology can ensure the full transparency of processes, from tender bidding to project completion. This will also enable the early detection of anomalies, misappropriation of funds or materials, and other signs of corruption.</p>
+        
+        <ul class="text-gray-400 font-libre-serif my-3 list-disc pl-4 space-y-2">
+        
+          <li><strong class="text-white">Intelligent Transportation Systems</strong><br>Leveraging AI, we aim to optimize road usage, reducing congestion and improving safety. Real-time data analysis can aid in traffic management, predictive maintenance, and accident prevention. Connected and autonomous vehicles can further streamline transport, leading to fewer accidents and more efficient use of roads.</li>
+          <li><strong class="text-white">Smart Tolls</strong><br>Automated toll collection systems powered by AI and IoT can streamline toll operations, reducing wait times, and improving efficiency. These systems can also prevent revenue leakage, ensuring that all funds collected contribute to the maintenance and improvement of the roadways.</li>
+          <li><strong class="text-white">Predictive Maintenance</strong><br>AI can help monitor infrastructure, predicting potential faults before they lead to costly repairs or dangerous failures. For instance, sensors placed on roads, bridges, and buildings can provide data to AI models that predict when maintenance will be required, extending the life of these structures, and improving public safety.</li>
+        </ul>
+       
+        
+        <p class="text-gray-400 font-libre-serif my-4">In conclusion, we believe that technology should be seen not just as a tool but as a fundamental building block for the future of India. Indic Acceleration is our pledge to build an India that is modern, inclusive, and sustainable, a nation that balances technological advancements with its rich cultural heritage. This is our manifesto for an enlightened and empowered India, an India that leads the world not just in technology, but in wisdom, compassion, and progress.</p>
+        
+    </div>
+</body>
+</html>
